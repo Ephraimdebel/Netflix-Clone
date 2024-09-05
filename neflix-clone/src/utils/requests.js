@@ -1,5 +1,6 @@
-const API_KEY = 'bc2f9a5a312555ea300e2edc245d583b';
-
+// const API_KEY = 'bc2f9a5a312555ea300e2edc245d583b';
+// const API_KEY = process.env.REACT_APP_MOVIE_DB_API_KEY;
+const API_KEY = import.meta.env.VITE_MOVIE_DB_API_KEY;
 
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,

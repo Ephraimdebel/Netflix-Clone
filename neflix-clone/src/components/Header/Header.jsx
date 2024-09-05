@@ -1,6 +1,7 @@
 import React from 'react'
 import "./header.css"
 import netflix_logo from "../../assets/images/netflix_Logo_PMS.png"
+
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
@@ -33,5 +34,9 @@ function Header() {
     </div>
   )
 }
+
+
+
+
 
 export default Header

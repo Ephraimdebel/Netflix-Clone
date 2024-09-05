@@ -12,6 +12,7 @@
     transition: all 0.5s;
     transition-timing-function: ease-in;
     z-index: 1;
+    
     /* background-color: red; */
 }
 .nav__blanck{
@@ -22,6 +23,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1450px;
+    margin-inline: auto;
 
 }
 .header_left ul{

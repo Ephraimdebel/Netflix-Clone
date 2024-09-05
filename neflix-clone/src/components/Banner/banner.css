@@ -1,6 +1,6 @@
 .banner{
     margin-top: -10vh;
-    height: 80vh;
+    height: 100vh;
     margin-bottom: -80px;
     color: white;
     object-fit: cover;
@@ -9,6 +9,9 @@
     margin-left: 30px;
     padding-top: 300px;
     margin-bottom: 300px;
+    max-width: 1450px;
+    margin-inline: auto;
+    /* background-color: red; */
 
 }
 .banner__title{
