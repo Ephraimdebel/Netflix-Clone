@@ -23,12 +23,12 @@ function Banner() {
     };
 
     return (
-        <div>
+        <>
 
         
         <div className='banner' style={{
-            backgroundSize: "cover",
             backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
+            backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat"
         }}>
@@ -43,9 +43,9 @@ function Banner() {
                 {/* <h1 className='banner_description'>{substring(movie?.overview,150)}</h1>  */}
                 <h1 className='banner_description'>{truncateText(movie?.overview,150)}</h1>
             </div>
-            <div className='banner__fadeBottom' />
+            <div className='banner__fadeBottom' ></div>
         </div>
-        </div>
+        </>
     );
 }
 

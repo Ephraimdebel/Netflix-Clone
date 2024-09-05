@@ -33,9 +33,7 @@
     cursor: pointer;
     /* background-color: ; */
 }
-.header_left ul li{
-    text-decoration: none;
-}
+
 .header_right ul {
     width:150%;
     display: flex;
