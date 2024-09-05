@@ -20,7 +20,7 @@ function Rows({title,fetchUrl,isLargeRow}) {
           console.log("error",error);
         }
       })()
-    },[]);
+    },[fetchUrl]);
 
     const handlerClick = (movies) =>{
         if (trailerUrl) {
