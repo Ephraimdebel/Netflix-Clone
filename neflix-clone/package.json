@@ -14,9 +14,6 @@
   "dev": "vite",
   
     
-  "deploy": "vite build && gh-pages -d dist",
-  
-    
   "build": "vite build",
   
     
