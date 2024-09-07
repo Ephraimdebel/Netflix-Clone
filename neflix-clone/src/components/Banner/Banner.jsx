@@ -9,7 +9,10 @@ function Banner() {
         const fetchData = async () => {
             try {
                 const request = await axios.get(requests.fetchNetflixOriginals);
+                console.log(request)
                 const randomIndex = Math.floor(Math.random() * request.data.results.length);
+                console.log(randomIndex)
+                console.log(movie)
                 setMovie(request.data.results[randomIndex]);
             } catch (error) {
                 console.log("Error fetching data:", error);
@@ -50,3 +53,6 @@ function Banner() {
 }
 
 export default Banner;
+
+// results = [1,2,3,4,5,5,6]
+// reslts[9]\//

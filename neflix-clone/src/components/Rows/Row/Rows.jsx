@@ -7,14 +7,16 @@ import YouTube from 'react-youtube';
 function Rows({title,fetchUrl,isLargeRow}) {
     const [movies,setMovie] = useState([])
     const [trailerUrl,setTraileUrl] = useState("");
-
+    
     const base_url = "https://image.tmdb.org/t/p/original";
     useEffect(()=> {
+      // promise .then((Data)).catch()
+      // asyn - await 
       (async () => {
         try {
-          console.log(fetchUrl)
+          // console.log("yhe ye fetch url nw::- ",fetchUrl)
           const request = await axios.get(fetchUrl);
-          console.log(request)
+          // console.log("ychi request :: ",request)
           setMovie(request.data.results)
         }catch (error) {
           console.log("error",error);
@@ -56,7 +58,7 @@ function Rows({title,fetchUrl,isLargeRow}) {
 
         </div>
         <div style = {{padding:'40px'}}>
-              {trailerUrl && <YouTube videoId = {trailerUrl} opts= {opts} />}
+              {trailerUrl && <YouTube videoId = {trailerUrl} opts= {opts} title = {"abe"}/>}
         </div>
     </div>
   )
