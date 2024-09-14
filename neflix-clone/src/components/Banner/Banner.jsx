@@ -24,6 +24,7 @@ function Banner() {
     const truncateText = (text, maxLength) => {
         return text?.length > maxLength ? text.substring(0, maxLength-1) + '...' : text;
     };
+   
 
     return (
         <>
